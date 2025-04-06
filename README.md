@@ -84,14 +84,3 @@ This repository is licensed under the **MIT License**. Feel free to use, modify,
 ## Contributions
 
 We welcome contributions to improve the templates. If you have suggestions for new templates or improvements, feel free to fork the repository, make your changes, and create a pull request.
-
----
-
-### Ready to elevate your email game? 🌟
-
-**Start using these responsive, elegant email templates today and enhance your customer communication!**
-
-```
-
----
-```
