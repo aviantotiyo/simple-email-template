@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selamat Datang di [Nama Perusahaan]</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      table {
+        width: 100%;
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 10px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .email-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        border-top: 5px solid #764ba2;
+        border-bottom: 5px solid #667eea;
+      }
+
+      .email-header {
+        background-color: #667eea;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .email-header h1 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .email-body {
+        padding: 20px;
+        text-align: left;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background-color: #667eea;
+        color: white;
+        padding: 12px 25px;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 6px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #764ba2;
+      }
+
+      .email-footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: #777;
+      }
+
+      .email-footer a {
+        color: #667eea;
+        text-decoration: none;
+      }
+
+      @media (max-width: 600px) {
+        .email-container {
+          width: 100% !important;
+          padding: 10px;
+        }
+
+        .cta-button {
+          width: 100%;
+          padding: 14px;
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table role="presentation" class="email-container">
+      <tr>
+        <td>
+          <div class="email-header">
+            <h1>Selamat Datang di [Nama Perusahaan]</h1>
+          </div>
+          <div class="email-body">
+            <p>Halo <strong>{{user_name}}</strong>,</p>
+            <p>
+              Terima kasih telah bergabung dengan kami! Kami sangat senang Anda
+              menjadi bagian dari [Nama Perusahaan]. Untuk memulai, Anda dapat
+              mengakses akun Anda dengan cara berikut:
+            </p>
+            <a href="{{login_link}}" class="cta-button">Masuk ke Akun Anda</a>
+            <p>
+              Jika Anda membutuhkan bantuan lebih lanjut, jangan ragu untuk
+              menghubungi tim dukungan kami.
+            </p>
+          </div>
+          <div class="email-footer">
+            <p>Terima kasih,<br />Tim Kami</p>
+            <p>
+              <small
+                >Jika Anda tidak mendaftar akun ini, Anda dapat mengabaikan
+                email ini.</small
+              >
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

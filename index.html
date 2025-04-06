@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verifikasi Email</title>
+    <style>
+      /* Global Styles */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        line-height: 1.5;
+      }
+
+      table {
+        width: 100%;
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 10px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Container for Email Body */
+      .email-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+        overflow: hidden;
+        border-top: 5px solid #764ba2; /* Soft line at the top */
+        border-bottom: 5px solid #667eea; /* Soft line at the bottom */
+      }
+
+      .email-content {
+        padding: 25px;
+        text-align: left; /* Teks rata kiri */
+      }
+
+      .email-header {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .email-body {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background-color: #667eea;
+        color: white;
+        padding: 12px 20px;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+      }
+
+      .cta-button:hover {
+        background-color: #764ba2;
+      }
+
+      .email-footer {
+        font-size: 14px;
+        color: #777;
+        margin-top: 20px;
+      }
+
+      .email-footer a {
+        color: #667eea;
+        text-decoration: none;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 600px) {
+        .email-container {
+          width: 100% !important;
+          padding: 10px;
+        }
+
+        .email-header {
+          font-size: 22px;
+        }
+
+        .cta-button {
+          width: 100%;
+          padding: 14px;
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table role="presentation" class="email-container">
+      <tr>
+        <td>
+          <table role="presentation" class="email-content">
+            <tr>
+              <td class="email-header">Verifikasi Email Anda</td>
+            </tr>
+            <tr>
+              <td class="email-body">
+                <p>Halo <strong>{{user_name}}</strong>,</p>
+                <p>
+                  Terima kasih telah mendaftar! Untuk melanjutkan, silakan klik
+                  tombol di bawah ini untuk memverifikasi alamat email Anda dan
+                  mengaktifkan akun Anda.
+                </p>
+                <a href="{{verification_link}}" class="cta-button"
+                  >Verifikasi Email</a
+                >
+                <p style="margin-top: 20px">
+                  Jika Anda tidak merasa mendaftar, Anda dapat mengabaikan email
+                  ini.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="email-footer">
+                <p>Terima kasih,<br />Tim Kami</p>
+                <p>
+                  <small
+                    >Jika Anda mengalami kesulitan, silakan hubungi kami di
+                    <a href="mailto:support@example.com"
+                      >support@example.com</a
+                    ></small
+                  >
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
