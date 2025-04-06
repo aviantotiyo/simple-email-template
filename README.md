@@ -1,4 +1,3 @@
-````markdown
 # Elegant & Responsive Email Templates Collection
 
 Welcome to the **Elegant & Responsive Email Templates** repository! This collection includes a variety of professionally designed, customizable, and **responsive email templates** that can be used for various purposes like **welcome emails**, **invoice emails**, **password reset emails**, and more. Perfect for developers, marketers, and businesses looking to enhance their email communication with customers.
@@ -24,10 +23,8 @@ Welcome to the **Elegant & Responsive Email Templates** repository! This collect
 ## How to Use
 
 1. **Clone the Repository**:
-   ```bash
+
    git clone https://github.com/aviantotiyo/simple-email-template.git
-   ```
-````
 
 2. **Select the Template**:
    Choose the appropriate template you need, such as Welcome Email, Invoice Email, or Password Reset Email.
